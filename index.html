@@ -5,6 +5,10 @@
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
+.buttonclass {
+ text-align: center;
+}
+
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
@@ -45,8 +49,8 @@ button:hover {
 }
 
 img.avatar {
-    width: 40%;
-    border-radius: 50%;
+    width: 16%;
+    border-radius: 0%;
 }
 
 .container {
@@ -127,9 +131,11 @@ span.psw {
 </head>
 <body>
 
-<h1>Informatica Clouds Ops Team</h1>
+<h1 align="center">Informatica Clouds Ops Team</h1>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<div class="buttonclass">
+  <button align="center" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+</div>
 
 <div id="id01" class="modal">
   
@@ -150,11 +156,6 @@ span.psw {
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </form>
 </div>
